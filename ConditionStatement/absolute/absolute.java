@@ -1,7 +1,7 @@
 package ConditionStatement.absolute;
 import java.util.Scanner;
 
-public class js {
+public class absolute {
     static int absolute(int num){
         if(num>=0) return  num;
         else return (-1*num);
