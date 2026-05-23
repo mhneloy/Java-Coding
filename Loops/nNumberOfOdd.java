@@ -11,8 +11,13 @@ public class nNumberOfOdd {
 //            System.out.println(odd);
 //            odd+=2;
 //        }
-        for(int i = 4; i<=(3*n + 1); i+=3){
-            System.out.println(i);
+//        for(int i = 4; i<=(3*n + 1); i+=3){
+//            System.out.println(i);
+//        }
+        int a = 1, r = 2;
+        for (int i = 1; i <=n ; i++) {
+            System.out.print(a + " ");
+            a *= r;
         }
     }
 }
