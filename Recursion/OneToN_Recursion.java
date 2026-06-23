@@ -1,10 +1,12 @@
 package Recursion;
 import java.util.Scanner;
 public class OneToN_Recursion {
+
     static void print1toN(int n){
         if(n == 0)return;
-        print1toN(n-1);
         System.out.println(n);
+        print1toN(n-1);
+        if(n!=1) System.out.println(n);
     }
     static void main() {
         Scanner sc = new Scanner(System.in);
