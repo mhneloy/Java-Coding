@@ -3,9 +3,12 @@ package Recursion;
 import java.util.Scanner;
 
 public class aRaisedTob {
-    public static int power(int num, int pow){
-        if(pow == 1) return num;
-        return (num * power(num,pow-1));
+    public static int power(int num, int pow) {
+        if (pow == 1) return num;
+//        return (num * power(num,pow-1));
+        int call = power(num,pow/2);
+       if(pow%2 == 0) return call * call;
+        else return num * call * call;
     }
     static void main() {
         Scanner sc = new Scanner(System.in);
@@ -17,3 +20,5 @@ public class aRaisedTob {
 
     }
 }
+
+// time complexity O(pow)
