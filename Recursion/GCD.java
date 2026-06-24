@@ -2,8 +2,8 @@ package Recursion;
 
 public class GCD {
     static void main() {
-        int a =  24;
-        int b = 60;
+        int a =  60;
+        int b = 24;
 
 
         System.out.println(gcd(a,b));;
