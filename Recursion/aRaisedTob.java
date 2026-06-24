@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class aRaisedTob {
     public static int power(int num, int pow) {
-        if (pow == 1) return num;
+        if (pow == 0) return 1;
 //        return (num * power(num,pow-1));
         int call = power(num,pow/2);
        if(pow%2 == 0) return call * call;
