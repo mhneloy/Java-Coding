@@ -10,7 +10,6 @@ public class fibonacci {
             return n;
         }
         int result = fibo(n-1) + fibo(n-2);
-        System.out.println(result);
         return result;
 
     }
